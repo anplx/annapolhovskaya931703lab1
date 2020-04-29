@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "ViewBagRes";
+}
+<div>
+    <h1 class="display-4">PassUsingViewBag</h1>
+    <b>Rand Value First : </b> @ViewBag.MyModel.num1
+    <br />
+    <b>Rand Value Second : </b> @ViewBag.MyModel.num2
+    <br />
+    <b>Add : </b>
+    <br />
+    @ViewBag.MyModel.num1 + @ViewBag.MyModel.num2 = @ViewBag.MyModel.Add()
+    <br />
+    <b>Sub : </b>
+    <br />
+    @ViewBag.MyModel.num1 - @ViewBag.MyModel.num2 = @ViewBag.MyModel.Sub()
+    <br />
+    <b>Mult : </b>
+    <br />
+    @ViewBag.MyModel.num1 * @ViewBag.MyModel.num2 = @ViewBag.MyModel.Mult()
+    <br />
+    <b>Div : </b>
+    <br />
+    @ViewBag.MyModel.num1 / @ViewBag.MyModel.num2 = @ViewBag.MyModel.Div()
+</div>

@@ -1,0 +1,25 @@
+﻿@{
+    var mymodel = ViewData["MyModel"] as MyModel;
+}
+    <div>
+        <h1 class="display-4">PassUsingViewData</h1>
+        <b>Rand Value First : </b> @mymodel.num1
+        <br />
+        <b>Rand Value Second : </b>  @mymodel.num2
+        <br />
+        <b>Add : </b>
+        <br />
+        @mymodel.num1 + @mymodel.num2 = @mymodel.Add()
+        <br />
+        <b>Sub : </b>
+        <br />
+        @mymodel.num1 - @mymodel.num2 = @mymodel.Sub()
+        <br />
+        <b>Mult : </b>
+        <br />
+        @mymodel.num1 * @mymodel.num2 = @mymodel.Mult()
+        <br />
+        <b>Div : </b>
+        <br />
+        @mymodel.num1 / @mymodel.num2 = @mymodel.Div()
+    </div>

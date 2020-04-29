@@ -1,0 +1,24 @@
+﻿@using lab1.Services
+@inject IDataSender CalcSend
+    <div>
+        <h1 class="display-4">AccessServiceDirectly</h1>
+        <b>Rand Value First : </b> @CalcSend.SendNum1()
+        <br />
+        <b>Rand Value Second : </b> @CalcSend.SendNum2()
+        <br />
+        <b>Add : </b>
+        <br />
+        @CalcSend.SendNum1() + @CalcSend.SendNum2() =  @CalcSend.SendAddR()
+        <br />
+        <b>Sub : </b>
+        <br />
+        @CalcSend.SendNum1() - @CalcSend.SendNum2() =  @CalcSend.SendSubR()
+        <br />
+        <b>Mult : </b>
+        <br />
+        @CalcSend.SendNum1() * @CalcSend.SendNum2() =  @CalcSend.SendMultR()
+        <br />
+        <b>Div : </b>
+        <br />
+        @CalcSend.SendNum1() / @CalcSend.SendNum2() =  @CalcSend.SendDivR()
+    </div>

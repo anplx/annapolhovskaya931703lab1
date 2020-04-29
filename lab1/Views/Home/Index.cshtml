@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <h1 class="display-4">Calc Service Demonstration</h1>
+    <ul>
+        <li>
+            <a href="@Url.Action("ViewModel","My")"> Using Model Calc </a>
+        </li>
+        <li>
+            <a href="@Url.Action("ViewDataRes","My")"> Using ViewData Calc </a>
+        </li>
+        <li>
+            <a href="@Url.Action("ViewBagRes","My")"> Using ViewBag Calc </a>
+        </li>
+        <li>
+            <a href="@Url.Action("ViewService","My")"> Using Service Injection Calc </a>
+        </li>
+    </ul>
+</div>
